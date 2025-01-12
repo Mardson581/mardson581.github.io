@@ -50,14 +50,9 @@
 @media screen and (min-width: 1200px)
 {
     aside {
-        position: fixed;
-        left: 15%;
-        transform: translate(0, 10%);
-    }
-
-    main {
-        position: absolute;
-        right: 10%;
+        position: sticky;
+        top: 15%;
+        justify-self: center;
     }
 
     h1 {
