@@ -1,14 +1,21 @@
-@media screen and (min-width: 768px) and (max-width: 1200px)
+@media screen and (min-width: 680px) and (max-width: 1200px)
 {
+    :root {
+        --extra-large: 70px;
+        --large: 40px;
+        --medium: 20px;
+        --small: 18px;
+    }
+
     body {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        padding: 0 var(--extra-large);
         height: fit-content;
     }
 
     header {
-        order: 1;
+        grid-area: 1 / 1 / 2 / 1;
     }
 
     aside {
@@ -16,6 +23,8 @@
         padding: 0;
         max-width: 500px;
         margin-top: 0;
+        grid-area: 2 / 1 / 3 / 1;
+        justify-self: center;
     }
 
     #profile-image {
@@ -25,6 +34,21 @@
     main {
         width: 100%;
         align-items: center;
+        grid-area: 3 / 1 / 4 / 1;
+    }
+
+    #about-button {
+        display: none;
+    }
+
+    #main-center {
+        width: fit-content;
+        grid-area: 4 / 1 / 5 / 1;
+        justify-self: center;
+    }
+
+    #main-center section {
+        padding: 0;
     }
 
     #skills {
@@ -44,6 +68,10 @@
 
     #skills .flex-container {
         width: 50%;
+    }
+
+    footer {
+        grid-area: 5 / 1 / 5 / 1;
     }
 }
 

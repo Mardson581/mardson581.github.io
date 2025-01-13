@@ -10,6 +10,11 @@
     --blue: #244BBF;
     --light-blue: #88A2F2;
     --gray: #5e5c5c;
+
+    --extra-large: 80px;
+    --large: 50px;
+    --medium: 30px;
+    --small: 24px;
 }
 
 html, body {
@@ -22,6 +27,7 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -70,14 +76,14 @@ h3 {
     font-family: Inter, sans-serif;
     font-weight: bold;
     color: var(--blue);
-    font-size: 32px;
+    font-size: var(--medium);
     margin: 10px;
 }
 
 p {
     font-family: Inter, sans-serif;
     color: var(--gray);
-    font-size: 20px;
+    font-size: var(--small);
     margin: 10px;
     text-align: center;
 }
@@ -135,7 +141,7 @@ h1 {
     font-family: Inter, sans-serif;
     font-weight: bold;
     color: white;
-    font-size: 80px;
+    font-size: var(--extra-large);
     text-align: left;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -145,12 +151,12 @@ h2 {
     font-family: Inter, sans-serif;
     color: var(--light-blue);
     font-weight: normal;
-    font-size: 30px;
+    font-size: var(--medium);
 }
 
 span {
     color: var(--light-blue);
-    font-size: 50px;
+    font-size: var(--large);
 }
 
 #skills-container {
@@ -174,13 +180,13 @@ span {
 
 .skill-box h2 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: var(--medium);
 }
 
 .skill-box span {
     font-weight: normal;
     color: white;
-    font-size: 25px;
+    font-size: var(--small);
     width: 100%;
 }
 
